@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Mooli", sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(226, 240, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: min-content;
+  background-color: white;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: min-content;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.search-box input {
+  width: 80%;
+  border: none;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-family: "Mooli", sans-serif;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 10px;
+  color: rgba(0, 0, 0, 0.674);
+}
+.search-box input::placeholder {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.374);
+  text-align: left;
+}
+*:focus {
+  outline: none;
+}
+
+.search-box button {
+  width: 45px;
+  height: 45px;
+
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.search-box button:hover {
+  background-color: aliceblue;
+}
+.whether-body {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+.whether-img {
+  width: 60%;
+}
+.whether-box {
+  text-align: center;
+  margin-block: 20px;
+}
+.whether-box .temprature {
+  font-weight: 800;
+  font-size: 30px;
+  position: relative;
+}
+.whether-box .temprature sup {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 600;
+}
+.weather-box .description {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.whether-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.humidity,
+.wind {
+  display: flex;
+  align-items: center;
+}
+.whether-details i {
+  font-size: 30px;
+}
+.humidity {
+  margin-left: 20px;
+}
+
+.wind {
+  margin-right: 20px;
+}
+.whether-details .text {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.whether-details span {
+  font-weight: 700;
+}
+.location-not-found {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 20px;
+}
+.location-not-found h1 {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.57);
+  text-align: center;
+  text-transform: capitalize;
+}
+.location-not-found img {
+  width: 70%;
+  margin-block: 20px;
+}
